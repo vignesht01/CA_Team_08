@@ -1,3 +1,27 @@
+`include"Program_Counter.v"
+`include"Program_Memory.v"
+`include"fetch_stage.v"
+`include"Instruction_Decoder.v"
+`include"Control_Unit.v"
+`include"Register_File.v"
+`include"Decode_reg.v"
+`include"Alu.v"
+`include"Execute_Stage.v"
+`include"Mux_2x1.v"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 module cpu_pipelined #(parameter WIDTH = 32,ADDR_WIDTH = 12) (
 input clk,
 input reset,
