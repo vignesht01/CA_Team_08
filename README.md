@@ -9,7 +9,7 @@
 - *Version*: V1.0 
 
 ## Team Members
-- Maneesh Shetty
+- Manish Shetty
 - Prajwal Rao
 - Sonal J Ail
 - Vignesh T Poojary 
