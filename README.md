@@ -10,7 +10,7 @@
 
 ## Team Members
 - Manish Shetty
-- Prajwal Rao
+- Prajwal Rao A
 - Sonal J Ail
 - Vignesh T Poojary 
 
