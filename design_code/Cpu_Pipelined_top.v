@@ -12,23 +12,12 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
 module cpu_pipelined #(parameter WIDTH = 32,ADDR_WIDTH = 12) (
 input clk,
 input reset,
 output wire[WIDTH-1:0]result
 );
 
-wire [ADDR_WIDTH-1:0]pc_in;
 wire [ADDR_WIDTH-1:0]pc_out;
 wire [ADDR_WIDTH-1:0]address; //program_memory address
 wire [WIDTH-1:0]instruction,instruction_w; 
@@ -50,7 +39,6 @@ assign result = alu_result;
 PC  #(.ADDR_WIDTH(ADDR_WIDTH)) instnt1(
 .clk(clk),
 .reset(reset),
-.pc_in(pc_in),
 .pc_out(pc_out)
 );
 

@@ -20,7 +20,7 @@ module control_unit #(parameter WIDTH_OP = 7)  (immidiate_data,func3, func7, opc
               alu_op = 4'b0001;
             end
             3'b100 : begin
-				  reg_wen = 1'b1;
+	      reg_wen = 1'b1;
               reg_flag = 1'b0;
               alu_op = 4'b0101;
             end
@@ -34,7 +34,7 @@ module control_unit #(parameter WIDTH_OP = 7)  (immidiate_data,func3, func7, opc
               reg_flag = 1'b0;
               alu_op = 4'b0100;
             end
-				default : begin
+	    default : begin
               reg_wen = 1'b0;
               reg_flag = 1'b0;
               alu_op = 4'b0000;
@@ -47,7 +47,7 @@ module control_unit #(parameter WIDTH_OP = 7)  (immidiate_data,func3, func7, opc
           alu_op = 4'b0010;
         end
         default: begin
-            reg_wen = 1'b0;
+          reg_wen = 1'b0;
           reg_flag = 1'b0;
           alu_op = 4'b0000;
         end
@@ -56,11 +56,11 @@ module control_unit #(parameter WIDTH_OP = 7)  (immidiate_data,func3, func7, opc
       7'b0000011 : begin
         reg_wen = 1'b1;
         reg_flag = 1'b1;
-		  load_data <= {12'b0 ,immidiate_data};
+	load_data <= {12'b0 ,immidiate_data};
         alu_op = 4'b0000;
       end
 		
-		default: begin
+	default: begin
         reg_wen = 1'b0;
         reg_flag = 1'b0;
         alu_op = 4'b0000;

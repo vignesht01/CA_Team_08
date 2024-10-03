@@ -1,7 +1,6 @@
 module PC #(parameter ADDR_WIDTH = 12) (
     input clk,    //clk signal for pc
     input reset,   //reset signal for pc
-    input [ADDR_WIDTH-1:0] pc_in,    //input address for pc
     output [ADDR_WIDTH-1:0] pc_out    //output 
 );
     reg [ADDR_WIDTH-1:0] pc_reg;
