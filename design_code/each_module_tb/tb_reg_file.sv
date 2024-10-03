@@ -1,4 +1,4 @@
-`include "Cpu_Pipelined_top.v"
+`include "../Cpu_Pipelined_top.v"
 module tb_register_file();
   reg clk, reg_write_en;
   reg [4:0] source1_reg, source2_reg, destination_reg;
@@ -35,6 +35,7 @@ module tb_register_file();
     $finish;
   end
 endmodule
+
 
 
 
